@@ -9,7 +9,7 @@ const NavBar = () => {
         <nav className="nav-bar">
         
         <div id="header">
-           "Om-nom-nom" Kitchen  
+           "Om-nom-nom" Kitchen
         </div>
         
         <ul>

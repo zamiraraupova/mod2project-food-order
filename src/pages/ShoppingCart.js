@@ -1,4 +1,5 @@
-
+import { connect } from "react-redux"
+import { removeFromCart } from "../actions"
 const Shoppingcart = (props) => {
     console.log(props.cartItems) 
      //console.log("shopping cart line5",props.cartItems.length)
@@ -30,5 +31,5 @@ const Shoppingcart = (props) => {
      )
  }
  
- export default Shoppingcart
+ export default connect({removeFromCart:removeFromCart})(Shoppingcart)
  

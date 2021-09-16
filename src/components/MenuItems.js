@@ -1,8 +1,9 @@
 import React from 'react'
-
+import { connect } from "react-redux"
+import { addToCart } from '../actions'
 
 function MenuItems(props) {
-
+console.log(props)
     return (
         <div className="item-section">
             <div id="img"> <img src={props.item.image} /> </div>
@@ -17,4 +18,4 @@ function MenuItems(props) {
     )
 }
 
-export default MenuItems
+export default connect({addToCart:addToCart})(MenuItems)
