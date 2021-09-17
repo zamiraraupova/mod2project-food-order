@@ -2,13 +2,15 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div id="footer">
-            <h4>          4801 Bordeaux Ln Mason OH 45040
-                                  <br/>
-                                  1-513-885-2554
-                                  <br/>
-                                  email: zamiraraupova13@gmail.com
-                </h4>
+        <div className="footer">
+            <h3>Contact Info:</h3> 
+                <h5>## Street City State #####
+                    <br/>
+                    1-111-222-3333
+                    <br/>
+                    email: rendome@email.com
+                </h5>
+            <h3>Folow us </h3>    
         </div>
     )
 }
