@@ -18,4 +18,4 @@ console.log(props)
     )
 }
 
-export default connect(null, {addToCart:addToCart})(MenuItems)
+export default connect(null, {addToCart})(MenuItems)

@@ -1,22 +1,23 @@
-import menuList from "../components/Data";
+//import menuList from "../components/Data";
 //import cartItems from ''
 //shoppingCart: []
 // actions: adding and removing items 
 // switch add and remove 
 const initialState = {
-    shoppingCart: menuList
+    shoppingCart: []   // empty cart
 }
 
 export const shoppingCartReducer = (state = initialState, action) => {
     // we are switching between actions
     switch (action.type) {
         case "ADD_TO_CART": 
-            return [...state, action.payload];
-        case 'REMOVE_FROM_CART':
-            return [...state, ]
-            state.filter((food) => { 
-                return food.name !== item.name
+            return {...state, shoppingCart:[...state.shoppingCart,action.payload]}; // action.paylod === object
+        case 'REMOVE_FROM_CART':            // ^^ grabbing state , ^^ adding new thing
+            const newMenu = state.shoppingCart.filter((food) => { 
+                return food.name !== action.payload.name
             })
+            return {...state, shoppingCart:newMenu}
+            
         default:                
             return state        
     }

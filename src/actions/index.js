@@ -3,7 +3,7 @@
 // export const GET_URL_SUCCESS = 'GET_URL_SUCCESS'
 // export const GET_URL_FAIL = 'GET_URL_FAIL'
 
-import ShoppingCart from "../pages/ShoppingCart"
+//import ShoppingCart from "../pages/ShoppingCart"
 
 
 // this is just syntax for dispatch
@@ -42,18 +42,16 @@ export const REMOVE_FROM_CART = "REMOVE_FROM_CART"
 //     }
 // }
 
-
-
-export const addToCart = (dispatch) => {
+export const addToCart = (item) => (dispatch) => {  // item - parameter===object that will pass when I click btn
     return dispatch({
         type: ADD_TO_CART,
-        payload: "CLICK"
+        payload: item
     })
 }
-export const removeFromCart = (dispatch) => {
+export const removeFromCart = (item) => (dispatch) => {
     return dispatch({
         type: REMOVE_FROM_CART,
-        payload: "CLICK"
+        payload: item
     })
 }
 

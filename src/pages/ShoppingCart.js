@@ -1,5 +1,11 @@
 import { connect } from "react-redux"
 import { removeFromCart } from "../actions"
+
+
+const mapStateToProps = (state) => {
+    return {cartItems:state.shoppingCartReducer.shoppingCart}
+}
+
 const Shoppingcart = (props) => {
     console.log(props.cartItems) 
      //console.log("shopping cart line5",props.cartItems.length)
@@ -31,5 +37,5 @@ const Shoppingcart = (props) => {
      )
  }
  
- export default connect(null, {removeFromCart:removeFromCart})(Shoppingcart)
+ export default connect(mapStateToProps, {removeFromCart})(Shoppingcart)
  
