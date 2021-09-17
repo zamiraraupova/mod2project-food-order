@@ -3,6 +3,8 @@
 // export const GET_URL_SUCCESS = 'GET_URL_SUCCESS'
 // export const GET_URL_FAIL = 'GET_URL_FAIL'
 
+import ShoppingCart from "../pages/ShoppingCart"
+
 
 // this is just syntax for dispatch
 //const fetchGIF = () => dispatch => {
@@ -30,19 +32,29 @@
 
 
 
-
+export const ADD_TO_CART = "ADD_TO_CART"
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART"
 //we are creating an action creator here so it will connect to "connect" in MenuItems.js
-export const addToCart = () => {
-    return {
-        type: "ADD_TO_CART",
+// dispatch is a method object 
+// export const shoppingCartActions = () => {
+//     return (dispatch) => {
+
+//     }
+// }
+
+
+
+export const addToCart = (dispatch) => {
+    return dispatch({
+        type: ADD_TO_CART,
         payload: "CLICK"
-    }
+    })
 }
-export const removeFromCart = () => {
-    return {
-        type: "REMOVE_FROM_CART",
+export const removeFromCart = (dispatch) => {
+    return dispatch({
+        type: REMOVE_FROM_CART,
         payload: "CLICK"
-    }
+    })
 }
 
 
