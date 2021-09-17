@@ -1,7 +1,8 @@
-import reducer1 from "./reducer1"
+import { addToCartReducer } from "./reducer1"
+import { removeFromCartReducer } from './reducer2'
 import { combineReducers } from "redux"
 
-const reducer = combineReducers({reducer1})
+const reducer = combineReducers({addToCartReducer, removeFromCartReducer})
 
 
 export default reducer

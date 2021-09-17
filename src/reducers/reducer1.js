@@ -1,5 +1,5 @@
 import menuList from "../components/Data";
-import cartItems from ''
+//import cartItems from ''
 //shoppingCart: []
 // actions: adding and removing items 
 // switch add and remove 
@@ -19,18 +19,4 @@ export const addToCartReducer = (state=menuList, action) => {
     //     return state
     // }
 
-export const removeFromCartReducer = (state=cartItems, action) => {
-    switch (action.type){
-        case 'REMOVE_FROM_CART':
-            return state.filter((food) => { 
-              return food.name !== item.name
-            })
-    }
 
-}
-
-     
-
-
-
-export default reducer

@@ -31,5 +31,5 @@ const Shoppingcart = (props) => {
      )
  }
  
- export default connect({removeFromCart:removeFromCart})(Shoppingcart)
+ export default connect(null, {removeFromCart:removeFromCart})(Shoppingcart)
  
