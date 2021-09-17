@@ -1,5 +1,4 @@
-//import menuList from "../components/Data";
-//import cartItems from ''
+
 //shoppingCart: []
 // actions: adding and removing items 
 // switch add and remove 
