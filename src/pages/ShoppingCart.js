@@ -13,7 +13,7 @@ const Shoppingcart = (props) => {
      const itemsPrice = props.cartItems.reduce((a,item)=> a + item.price, 0)
      
      return (
-         <div className="shopping-cart-page">
+         <div className="shopping-cart-page page">
             <div id="h2"><h2>Cart Items</h2></div>
               
               <div id="cart-items">
