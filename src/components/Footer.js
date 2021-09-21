@@ -8,9 +8,8 @@ const Footer = () => {
                     <br/>
                     1-111-222-3333
                     <br/>
-                    email: rendome@email.com
-                </h5>
-            <h3>Folow us </h3>    
+                    email: om-nom-nom@gmail.com
+                </h5>   
         </div>
     )
 }

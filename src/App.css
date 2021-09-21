@@ -4,16 +4,15 @@
   box-sizing: border-box; 
 }
 
-
 #app{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: fantasy;
   font-weight: bold;
   font-size: larger;
   background-color: blanchedalmond;
   /* background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574"); */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -36,7 +35,7 @@
   height: 1cm;
   width: 1cm;
   position: relative;
-  bottom: 0.5cm;
+  /* bottom: 0.3cm; */
 }
 .home-page{
   background-color: antiquewhite;
@@ -123,6 +122,9 @@ button{
 }
 .menu-page {
   background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 140vh;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
